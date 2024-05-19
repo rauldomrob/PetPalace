@@ -1,0 +1,195 @@
+:root {
+    --naranja-muy-claro-letras: #fce5c6;
+    --naranja-footer: #c56c30;
+    --gris-oscuro: #292823;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.3px;
+}
+
+/* html, body {
+    overflow-x: hidden;
+} */
+
+footer {
+    background-color: var(--naranja-footer);
+    width: 100vw;
+    text-align: center;
+    min-width: 285px;
+    border-top: var(--gris-oscuro) solid 3px;
+}
+
+#redes-sociales {
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos_redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    max-width: 52px;
+    max-height: 52px;
+    min-width: 24px;
+    min-height: 24px;
+    margin: 0 5px;
+}
+
+.fa-lg {
+    top: 50%;
+}
+
+.linea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.linea>div {
+    display: inline-block;
+    height: 2px;
+    background-color: var(--naranja-muy-claro-letras);
+    width: 100%;
+    vertical-align: center;
+}
+
+#logo {
+    margin: -10px auto -25px auto;
+    width: 8.2vw;
+    min-width: 102px;
+    padding: 0 7px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#logo img:hover,
+#logo img:active {
+    position: relative;
+    top: -3px;
+}
+
+.copyright {
+    position: relative;
+    width: 90%;
+    margin: -5px auto 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    color: var(--naranja-muy-claro-letras);
+    cursor: default;
+}
+
+.subdiv_politicas {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -15px;
+    text-decoration: underline;
+}
+
+.legal {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+.separador {
+    display: inline-block;
+    margin: 0 20px;
+    width: 2px;
+    height: 18px;
+    margin-top: 2px;
+    background-color: var(--naranja-muy-claro-letras);
+    text-decoration: underline;
+}
+
+.privacidad {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+.legal>a:visited,
+.privacidad>a:visited {
+    color: var(--naranja-muy-claro-letras);
+}
+
+.legal>a,
+.privacidad>a {
+    color: var(--naranja-muy-claro-letras);
+}
+
+.legal>a:hover,
+.legal>a:active,
+.privacidad>a:hover,
+.privacidad>a:active {
+    text-shadow: 0 0 2px rgba(252, 240, 222, 0.3),
+        0 0 5px rgba(252, 240, 222, 0.3),
+        0 0 7px rgba(252, 240, 222, 0.3);
+}
+
+@media(max-width: 400px) {
+    .copy {
+        font-size: 12px;
+    }
+
+    .subdiv_politicas a {
+        font-size: 12px;
+    }
+
+    .legal>a:hover,
+    .legal>a:active,
+    .privacidad>a:hover,
+    .privacidad>a:active {
+        font-size: 12.5px;
+    }
+}
+
+@media(max-width: 750px) {
+    .legal {
+        margin-left: 2.8vw;
+    }
+
+    #logo {
+        min-width: 100px;
+    }
+
+    .logos_redes {
+        padding: 0 10px;
+    }
+}

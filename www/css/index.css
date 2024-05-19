@@ -1,0 +1,177 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranja: #f17f2d;
+    --azul-muy-claro: #5bb7c54a;
+    --gris-oscuro: #292823;
+    --naranja-oscuro-sombra: #161109;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/*La clase hidden oculta el objeto con display:none*/
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: var(--azul-muy-claro);
+}
+
+.log:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#btn-logon {
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 0;
+}
+
+.relleno {
+    width: 100%;
+    height: 2px;
+}
+
+.portada {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.relleno_abajo {
+    border-bottom: 2px solid #0f2225;
+}
+
+.img_portada {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.img_portada img {
+    width: 90%;
+    display: block;
+    max-width: 905px;
+}
+
+.sobre_nosotros {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.boton_abajo_index {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--azul-muy-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.boton_abajo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/* #boton_ver_animales {
+    padding: 6px 12px;
+    font-size: 1.6em;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ee9a5f;
+    transition: background-color 0.1s, color 0.2s, box-shadow 0.05s;
+}
+
+#boton_ver_animales:hover,
+#boton_ver_animales:active {
+    cursor: pointer;
+    background-color: #ee9657;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.863);
+} */
+
+/* Estilos base para el botón */
+#boton_ver_animales {
+    padding: 6px 12px;
+    font-size: 1.6em;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ee9a5f;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.05s;
+    /* Inicia la animación cuando la página se carga y se repite infinitamente */
+    animation: destello 2s infinite alternate;
+}
+
+/* Cambia el color de fondo y la sombra al pasar el mouse */
+#boton_ver_animales:hover,
+#boton_ver_animales:active {
+    cursor: pointer;
+    background-color: #ee9657;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.863);
+}
+
+/* Define la animación del destello */
+@keyframes destello {
+    0% {
+        box-shadow: 0 0 10px #ee9a5f;
+        background-color: #ee9a5f;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #f5b688;
+        background-color: #f5b688;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #ee9a5f;
+        background-color: #ee9a5f;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: 160px;
+        position: relative;
+    }
+
+    header h1 {
+        margin: 20px 0;
+    }
+
+    #header-der {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+
+    #profile {
+        margin-bottom: 20px;
+    }
+
+    #btn-menu {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}

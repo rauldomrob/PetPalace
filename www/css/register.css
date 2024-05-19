@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranja: #f17f2d;
+    --gris-oscuro: #292823;
+    --blanco: #f1f2ec;
+    --azul-claro: #5bb7c5;
+    --azul-muy-claro: #5bb7c5a0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--azul-muy-claro);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.volver {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 20px;
+}
+
+i.fa-solid {
+    font-size: 45px;
+}
+
+#register {
+    margin: 10px auto;
+    background-color: var(--naranja);
+    border: 3px solid #292823;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 25px 15px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#register h1 {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 25px;
+    text-decoration: underline 4px;
+}
+
+.todo_logo_registro{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.logo_registro{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+}
+
+.logo_registro img{
+    height: 85px;
+}
+
+.logo_registro img{
+    height: 85px;
+}
+
+input {
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+}
+
+#nombres {
+    display: flex;
+}
+
+#nombre {
+    display: flex;
+    flex-direction: column;
+}
+
+#apellidos {
+    display: flex;
+    flex-direction: column;
+}
+
+#correo {
+    display: flex;
+    flex-direction: column;
+}
+
+#correo label {
+    margin-left: 10px;
+}
+
+#register-email {
+    width: 360px;
+    height: 30px;
+    z-index: 5;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#passwords * div {
+    display: flex;
+    align-items: center;
+}
+
+#passwords * div input {
+    width: 320px;
+    height: 30px;
+    z-index: 5;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#passwords * label {
+    margin-left: 10px;
+}
+
+.ojo {
+    background-color: var(--blanco);
+    border-radius: 50%;
+    width: 25px !important;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#fecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+#register-fecha {
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.todo_boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.todo_boton button {
+    padding: 4px 10px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ee9a5f;
+    transition: background-color 0.1s, color 0.2s, box-shadow 0.05s;
+}
+
+.todo_boton button:hover,
+.todo_boton button:active {
+    cursor: pointer;
+    background-color: #ee9657;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.863);
+}
+
+.boton_borrar {
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+
+#nombre,
+#apellidos,
+#correo,
+#contra-1,
+#contra-2,
+#fecha {
+    position: relative;
+}
+
+#texto-oculto {
+    visibility: hidden;
+    border-radius: 5px;
+    height: 18px;
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: black;
+    text-align: center;
+}
+
+
+@media(max-width: 425px){
+    #register{
+        width: 95%;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    #register-email{
+        width: 90%;
+    }
+}
+
+@media(max-width: 620px){
+    .volver {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        top: 0;
+        left: 0;
+    }
+    
+    i.fa-solid {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 400px){
+    .volver {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        top: 0;
+        left: 0;
+    }
+    
+    i.fa-solid {
+        font-size: 35px;
+    }
+}

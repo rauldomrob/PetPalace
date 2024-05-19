@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="html_index" lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="../css/aboutUs.css">
+        <link rel="shortcut icon" href="img/logo_sin_fondo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>PetPalace</title>
+    </head>
+    <body class="body_index">
+        <header>
+            <div class="todo_header">
+                <div class="main_header">
+                    <div class="logo_header">
+                        <div class="logo_header_img">
+                            <a href="index.html">
+                                <img src="./img/logo_sin_fondo.png" alt="Logo PetPalace">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slogan">
+                        <div class="texto_slogan">
+                            !Un hogar para ellos, un amigo para siempre!
+                        </div>
+                    </div>
+                    <div class="todo_botones">
+                        <div class="botones">
+                            <div class="boton"><button id="open-login">Log In</button></div>
+                            <div class="boton"><a href="register.html" class="log"
+                                    id="btn-logon"><button>Registrarse</button></a></div>
+                        </div>
+                        <div class="profile botones">
+                            <div class="boton"><a href="profile.html" id="btn-profile"><button>Mi cuenta</button></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo_flecha">
+                    <button id="flecha" class="flecha">
+                        <img src="./img/flecha_hacia_abajo.png" alt="flecha" />
+                    </button>
+                </div>
+
+                <div class="subheader">
+                    <div class="categorias">
+                        <div class="categoria Todos">Todos</div>
+                        <div class="categoria Perro">Perros</div>
+                        <div class="categoria Gato">Gatos</div>
+                        <div class="categoria Ave">Aves</div>
+                        <div class="categoria Reptil">Reptiles</div>
+                        <div class="categoria Otros">Otros</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="portada">
+                <div class="img_portada">
+                    <img src="img/animales.jpg" alt="animales">
+                </div>
+                <div class="relleno relleno_abajo"></div>
+            </div>
+            </div>
+            <div class="sobre_nosotros" data-include="inc/aboutUs.html"></div>
+            <div class="boton_abajo_index">
+                <div class="boton_abajo">
+                    <button id="boton_ver_animales">
+                        Ver animales
+                    </button>
+                </div>
+            </div>
+            <!-- <div data-include="inc/login.html" id="fondo-login"></div> -->
+            <div id="fondo-login">
+                <div id="login">
+                    <button id="cerrar-login">×</button>
+                    <img src="img/logo_sin_fondo.png" alt="Logo PetPalace">
+                    <h2>Iniciar sesión en PetPalace</h2>
+                    <div class="todo_login">
+                        <div id="form-login">
+                            <div id="correo">
+                                <label>Correo Electronico</label>
+                                <input id="login-email" type="email" placeholder="Correo electronico" autocomplete="off"
+                                    value="" required>
+                            </div>
+                            <div id="contra">
+                                <label>Contraseña</label>
+                                <div>
+                                    <input id="login-password" type="password" placeholder="Contraseña" autocomplete="off"
+                                        value="" required>
+                                    <img src="img/ojo_cerrado.png" class="ojo" type="button">
+                                </div>
+                            </div>
+                            <div id="div-btn"><button id="btn-login">Acceder</button></div>
+                        </div>
+                    </div>
+                    <div id="botones">
+                        <button class="login-ex" id="github"><img src="img/logo_github.png">
+                            <h4>Inicia con GitHub</h4>
+                        </button>
+                        <button class="login-ex" id="google"><img src="img/logo_google.png">
+                            <h4>Inicia con Google</h4>
+                        </button>
+                    </div>
+                    <h4 id="msj-error"></h4>
+                    <h3>¿No tienes cuenta?</h3><a href="register.html" class="regis_link">Regístrate</a>
+                </div>
+            </div>
+        </main>
+        <div data-include="inc/footer.html"></div>
+    </body>
+    <script src="js/header.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/login.js"></script>
+    <script src="js/include.js"></script>
+    <script src="cordova.js"></script>
+</html>

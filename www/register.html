@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro | PetPalace</title>
+        <link rel="shortcut icon" href="img/logo_sin_fondo.png">
+        <link rel="stylesheet" href="css/register.css">
+        <script src="https://kit.fontawesome.com/390edf9e42.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="volver"><a href="index.html"><i class="fa-solid fa-circle-arrow-left" style="color: black;"></i></a>
+        </div>
+        <div id="register">
+            <h1>Registro</h1>
+            <div class="todo_logo_registro">
+                <div class="logo_registro">
+                    <img src="img/logo_sin_fondo.png" alt="logo">
+                </div>
+            </div>
+            <div id="correo">
+                <label>Correo Electronico</label>
+                <input id="register-email" type="email" placeholder="Correo electronico" autocomplete="off" value=""
+                    required>
+            </div>
+            <div id="passwords">
+                <div id="contra-1">
+                    <label>Contraseña</label>
+                    <div>
+                        <input id="register-password-1" type="password" placeholder="Contraseña" autocomplete="off" value=""
+                            required>
+                        <img src="img/ojo_cerrado.png" class="ojo" type="button">
+                    </div>
+                </div>
+                <div id="contra-2">
+                    <label>Repetir contraseña</label>
+                    <div>
+                        <input id="register-password-2" type="password" placeholder="Contraseña" autocomplete="off"
+                            value="">
+                        <img src="img/ojo_cerrado.png" class="ojo" type="button">
+                    </div>
+                </div>
+            </div>
+            <div id="fecha">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" id="register-fecha">
+            </div>
+            <div class="texto-oculto" id="texto-oculto"></div>
+            <div class="todo_boton">
+                <button id="btn-register" class="todo_boton">Crear Cuenta</button>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="js/register.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+</html>
